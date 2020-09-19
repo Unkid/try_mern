@@ -1,0 +1,30 @@
+{
+  "name": "pr1",
+  "version": "1.0.0",
+  "description": "example",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.0",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.24",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "install-all": "npm install && cd ../client && npm install",
+    "server": "node index",
+    "dev": "nodemon index",
+    "client": "npm start --prefix ../client", 
+    "start": "concurrently \"npm run dev\" \"npm run client\"" 
+  },
+  "author": "alex unkid",
+  "license": "ISC"
+}

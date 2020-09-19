@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-family: "Open Sans", serif;  
+  background-image: url('./background.png');
+  background-attachment: scroll;  
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+.container{
+  justify-content: center;
+}
+
+.login-form {
+  align-content: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #03210F;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+}
+
+.nav-collapse {
+  display: flex;
+}
+
+.nav-ul {
+  margin-right: auto;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+list-style: none;
+      list-style-position: outside;
+      list-style-image: none;
+      list-style-type: none;
+}
+
+.nav-link {
+  color: #fff;
+  background-color: transparent;
+}
+
+.nav-link:hover {
+  color: rgba(255,255,255,.75);
+}
+
+.nav-btn {
+  background: transparent;
+  border: 0;
+  color: #fff;
+}
+
+.nav-btn:hover {
+  color: rgba(255,255,255,.75);
+}
+textarea {
+  background-color: transparent;
+  border: 0; 
+  border-bottom: solid 2px  #000000;
+  padding-bottom: 4px;
+  color: #fff;
+  font-weight: lighter;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 20px;
+  outline: none;
+}
+
+input {
+  background-color: transparent;
+  border: 0; 
+  border-bottom: solid 2px  #000000;
+  padding-bottom: 4px;
+  color: #fff;
+  font-weight: lighter;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 20px;
+  outline: none;
+}
+
+select{
+  background-color: transparent;
+  color: #fff;
+  border: solid 2px  #000000;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* button {
+  border: 2px solid   #000000;
+  border-bottom: 4px solid  #000000;
+  padding: 8px 20px;
+  margin: 0 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color:   #000000;
+  color: #fff;
+  outline: none!important;
+}
+
+button:active {
+  border-bottom: 2px solid transparent;
+  border-color: transparent;
+  position: relative;
+  top: 2px;
+} */
