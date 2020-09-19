@@ -92,7 +92,7 @@ class Login extends Component {
                 </span><br/>
               
               
-                <button type="submit" >
+                <button className="btn text-white" type="submit" >
                   Login
                 </button>
               

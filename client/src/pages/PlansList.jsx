@@ -125,7 +125,7 @@ class PlansList extends Component {
                     {user.role ==='hr' ? (
                         <div className="hr">
                         <h2>База данных пуста</h2>
-                        <button href="plan/create">Создать план!</button>
+                        <button className="btn text-white" href="plan/create">Создать план!</button>
                         </div>
                     ):
                     (

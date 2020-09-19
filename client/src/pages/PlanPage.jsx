@@ -6,10 +6,6 @@ const Title = styled.h1.attrs({
     className: 'h1',
 })``
 
-const Wrapper = styled.div.attrs({
-    className: 'form-group',
-})
-
 const Label = styled.label`
     margin: 5px;
     font-size: 20px

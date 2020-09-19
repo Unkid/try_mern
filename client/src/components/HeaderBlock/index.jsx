@@ -56,8 +56,8 @@ class HeaderBlock extends Component {
 		else
 			return (
 			<header>
-					<nav id='header-block' className="navbar navbar-expand-md justify-content-center navbar-dark fixed-top bg-dark">
-					<a href="plan/list" className="navbar-brand">
+					<nav id='header-block' className="navbar">
+					<a href="plan/list" className="nav-brand">
 						<img src={logo} width="60" height="60" alt="Гринатом" />
 					</a>
 					</nav>
