@@ -11,7 +11,7 @@ class UpdatePlan extends Component {
     }
 
     render() {
-        return <button className=" mr-2" onClick={this.updatePlan}>Редактировать</button>
+        return <button className="btn text-dark" onClick={this.updatePlan}>Редактировать</button>
     }
 }
 
@@ -22,7 +22,7 @@ class ShowPlan extends Component {
     }
 
     render() {
-        return <button className=" mr-2" onClick={this.updatePlan}>Подробнее</button>
+        return <button className="btn text-dark" onClick={this.updatePlan}>Подробнее</button>
     }
 }
 
@@ -40,7 +40,7 @@ class DeletePlan extends Component {
     }
 
     render() {
-        return <button className=" mr-2"onClick={this.deletePlan}>Удалить</button>
+        return <button className="btn text-dark" onClick={this.deletePlan}>Удалить</button>
     }
 }
 
@@ -88,30 +88,34 @@ class PlansList extends Component {
             {plans.length ? (
                 <div className="fullDb">
                 {plans.map( plan => (
-                    <div className="card mb-3" key={plan._id}>
-                        <div className="card-header">
-                        {plan.title}
+                    <div className="my-card" key={plan._id}>
+                        <div className="my-card-header text-white">
+                            <div className="text-left">
+                            {plan.title}
+                            </div>
+                            <div className="text-right">
+                            {plan.worker}
+                            </div>
                         </div>
                         <div className="card-body">
-                        <h5 className="card-title">{plan.worker}</h5>
                         <p className="card-text">{plan.description}</p>
-                        <p className="card-text">Этап: {plan.planState}</p>
+                        <p className="card-text">{plan.endDate}</p>
                         {user.role === 'hr' ?
                         (
-                        <div className="buttons">
+                        <div>
                             <ShowPlan id={plan._id}/>
                             <UpdatePlan id={plan._id}/>
                             <DeletePlan id={plan._id} title={plan.title} />
                         </div>
                         )
                         :(
-                            <div className="buttons">
+                            <div>
                             <ShowPlan id={plan._id}/>
                             </div>
                         )}
                         </div>
-                        <div className="card-footer text-muted">
-                        {plan.updDate}
+                        <div className="my-card-footer text-white">
+                        {plan.planState}
                         </div>
                     </div>
                 ))}

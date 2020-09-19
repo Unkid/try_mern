@@ -45,10 +45,11 @@ class HeaderBlock extends Component {
 								</li>
 							</ul>
 							)}
-						<button className="nav-btn" onClick={this.onLogoutClick}>
-							Выйти из системы
-						</button>						
+												
 					</div>
+					<button className="nav-btn" onClick={this.onLogoutClick}>
+							Выйти из системы
+					</button>
 					</nav>
 				</header>
 			)
